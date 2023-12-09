@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">  <img src="img/logo-no-background.png" alt="Bootstrap" width="50" height="40">
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" onclick="reload()" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" id="tech" onclick="onNavItemClick('tech')" aria-current="page" href="#">Tech</a>
+          </li>
+
+<li class="nav-item">
+             <a class="nav-link" id="finance" onclick="onNavItemClick('finance')" aria-current="page"
+          href="#">Finance</a>
+          </li>
+<li class="nav-item">
+        <a class="nav-link" id="political" onclick="onNavItemClick('politics')" aria-current="page"
+          href="#">Political</a>
+      </li>
+        
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  
+  <form class="d-flex" role="search">
+    <input class="form-control me-2 news-input border border-dark" type="search" id="search-text" placeholder="Search"
+      aria-label="Search">
+    <button class="btn btn-outline-success search-button" id="search-button" type="submit">Search</button>
+  </form>
+  <h1 class="head"><span id="heading"></span> News</h1>
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 cards-container g-4" id="cards-container"
+      style="margin-left: 10px; margin-top: 10px;">
+
+
+
+    </div>
+
+  </main>
+  <template id="template-news-card">
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" id="news-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="news-title">Card title</h5>
+          <p class="card-text" id="news-desc">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary" id="news-source">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

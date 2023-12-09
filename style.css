@@ -1,0 +1,11 @@
+
+.card-body:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #449ecb;
+    transform: translateY(-2px);
+}
+.head{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
